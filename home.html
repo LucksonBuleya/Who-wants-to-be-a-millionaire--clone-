@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Who Wants to Be a Millionaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 🎮 Game Container -->
+    <div id="game-container" style="display: none">
+      <h1>Who Wants to Be a Millionaire</h1>
+
+      <!-- 🤵 Player and Question Area -->
+      <p id="player-name">Player: <span id="player-name-text"></span></p>
+      <div id="question-container">
+        <p id="question">Loading question...</p>
+        <div id="options">
+          <button class="option" data-option="A"></button>
+          <button class="option" data-option="B"></button>
+          <button class="option" data-option="C"></button>
+          <button class="option" data-option="D"></button>
+        </div>
+      </div>
+
+      <!-- 💵 Prize Status -->
+      <div id="status">
+        <p id="prize">Prize: $0</p>
+      </div>
+
+      <!-- 🚪 Walk Away Button -->
+      <button id="walk-away-btn">Walk Away</button>
+    </div>
+
+    <!-- 💰 Prize Ladder UI -->
+    <div id="ladder">
+      <ul id="prize-ladder"></ul>
+    </div>
+
+    <!-- 🎮 Name Entry and Start Button -->
+    <div id="name-entry">
+      <input type="text" id="name-input" placeholder="Enter your name" />
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
