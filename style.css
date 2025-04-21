@@ -1,0 +1,139 @@
+* {
+  background-color: #1a286f;
+  color: white;
+}
+
+/* Prize Ladder Styles */
+#ladder {
+  position: absolute; /* Ensure the ladder stays visible even when scrolling */
+  right: 20px; /* Position it on the right side */
+  top: 10px; /* Place it slightly below the top */
+  background: #1e266d; /* Background color */
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-family: Arial, sans-serif;
+  max-width: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
+  z-index: 100; /* Make sure it appears above other content */
+}
+
+#prize-ladder {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#prize-ladder li {
+  padding: 8px 10px;
+  margin: 4px 0;
+  border-radius: 4px;
+  background: #273896; /* Default color for each prize level */
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+#prize-ladder li.active {
+  background: gold;
+  color: #000;
+  font-weight: bold;
+}
+
+#prize-ladder li.checkpoint {
+  border: 2px solid orange; /* Highlight checkpoints with a border */
+}
+
+/* Game Container Styles */
+#game-container {
+  max-width: 600%;
+  right: 0px;
+  margin: 0 auto;
+  background: #1e266d;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(199, 195, 195, 0.4);
+}
+
+#question-container {
+  margin-top: 20px;
+}
+
+#options {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.option {
+  background: #273896;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option:hover {
+  background: #1a286f;
+}
+
+.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.incorrect {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#walk-away-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#walk-away-btn:hover {
+  background: #e68a00;
+}
+
+/* Name Entry Styles */
+#name-entry {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#name-entry input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #273896;
+}
+
+#name-entry button {
+  padding: 10px 20px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+#name-entry button:hover {
+  background: #388e3c;
+}
